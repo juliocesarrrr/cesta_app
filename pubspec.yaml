@@ -1,0 +1,28 @@
+name: cesta_app
+description: Lista de compras em Flutter, com salvamento local e compartilhamento.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Guarda a lista no proprio aparelho, sem servidor.
+  shared_preferences: ^2.5.5
+
+  # Abre o menu do sistema para enviar a lista por WhatsApp, e-mail, etc.
+  share_plus: ^13.3.0
+
+  # Abre o WhatsApp e o aplicativo de e-mail diretamente.
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
